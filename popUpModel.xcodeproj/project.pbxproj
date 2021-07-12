@@ -13,6 +13,12 @@
 		FA406A7C269C0F5700A29FD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA406A7A269C0F5700A29FD7 /* Main.storyboard */; };
 		FA406A7E269C0F5800A29FD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA406A7D269C0F5800A29FD7 /* Assets.xcassets */; };
 		FA406A81269C0F5800A29FD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA406A7F269C0F5800A29FD7 /* LaunchScreen.storyboard */; };
+		FA406A90269C10B400A29FD7 /* Popover.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA406A8A269C10B400A29FD7 /* Popover.swift */; };
+		FA406A91269C10B400A29FD7 /* UIViewControler+Popover.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA406A8B269C10B400A29FD7 /* UIViewControler+Popover.swift */; };
+		FA406A92269C10B400A29FD7 /* PopoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA406A8C269C10B400A29FD7 /* PopoverCell.swift */; };
+		FA406A93269C10B400A29FD7 /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA406A8D269C10B400A29FD7 /* PopoverView.swift */; };
+		FA406A94269C10B400A29FD7 /* PopoverItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA406A8E269C10B400A29FD7 /* PopoverItem.swift */; };
+		FA406A95269C10B400A29FD7 /* PopoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA406A8F269C10B400A29FD7 /* PopoverController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		FA406A7D269C0F5800A29FD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA406A80269C0F5800A29FD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA406A82269C0F5800A29FD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA406A8A269C10B400A29FD7 /* Popover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Popover.swift; sourceTree = "<group>"; };
+		FA406A8B269C10B400A29FD7 /* UIViewControler+Popover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewControler+Popover.swift"; sourceTree = "<group>"; };
+		FA406A8C269C10B400A29FD7 /* PopoverCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverCell.swift; sourceTree = "<group>"; };
+		FA406A8D269C10B400A29FD7 /* PopoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverView.swift; sourceTree = "<group>"; };
+		FA406A8E269C10B400A29FD7 /* PopoverItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverItem.swift; sourceTree = "<group>"; };
+		FA406A8F269C10B400A29FD7 /* PopoverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 		FA406A73269C0F5700A29FD7 /* popUpModel */ = {
 			isa = PBXGroup;
 			children = (
+				FA406A89269C10B400A29FD7 /* PopupController */,
 				FA406A74269C0F5700A29FD7 /* AppDelegate.swift */,
 				FA406A76269C0F5700A29FD7 /* SceneDelegate.swift */,
 				FA406A78269C0F5700A29FD7 /* ViewController.swift */,
@@ -65,6 +78,19 @@
 				FA406A82269C0F5800A29FD7 /* Info.plist */,
 			);
 			path = popUpModel;
+			sourceTree = "<group>";
+		};
+		FA406A89269C10B400A29FD7 /* PopupController */ = {
+			isa = PBXGroup;
+			children = (
+				FA406A8A269C10B400A29FD7 /* Popover.swift */,
+				FA406A8B269C10B400A29FD7 /* UIViewControler+Popover.swift */,
+				FA406A8C269C10B400A29FD7 /* PopoverCell.swift */,
+				FA406A8D269C10B400A29FD7 /* PopoverView.swift */,
+				FA406A8E269C10B400A29FD7 /* PopoverItem.swift */,
+				FA406A8F269C10B400A29FD7 /* PopoverController.swift */,
+			);
+			path = PopupController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +163,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA406A93269C10B400A29FD7 /* PopoverView.swift in Sources */,
 				FA406A79269C0F5700A29FD7 /* ViewController.swift in Sources */,
 				FA406A75269C0F5700A29FD7 /* AppDelegate.swift in Sources */,
 				FA406A77269C0F5700A29FD7 /* SceneDelegate.swift in Sources */,
+				FA406A91269C10B400A29FD7 /* UIViewControler+Popover.swift in Sources */,
+				FA406A90269C10B400A29FD7 /* Popover.swift in Sources */,
+				FA406A94269C10B400A29FD7 /* PopoverItem.swift in Sources */,
+				FA406A95269C10B400A29FD7 /* PopoverController.swift in Sources */,
+				FA406A92269C10B400A29FD7 /* PopoverCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
